@@ -1,0 +1,386 @@
+<!DOCTYPE html><html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>
+@charset "utf-8";
+
+@font-face { font-family: "DM Sans"; font-style: normal; font-weight: 300; font-display: swap; src: url("https://fonts.gstatic.com/s/dmsans/v17/rP2Hp2ywxg089UriCZ2IHSeH.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: "DM Sans"; font-style: normal; font-weight: 300; font-display: swap; src: url("https://fonts.gstatic.com/s/dmsans/v17/rP2Hp2ywxg089UriCZOIHQ.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: "DM Sans"; font-style: normal; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/dmsans/v17/rP2Hp2ywxg089UriCZ2IHSeH.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: "DM Sans"; font-style: normal; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/dmsans/v17/rP2Hp2ywxg089UriCZOIHQ.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: "DM Sans"; font-style: normal; font-weight: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/dmsans/v17/rP2Hp2ywxg089UriCZ2IHSeH.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: "DM Sans"; font-style: normal; font-weight: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/dmsans/v17/rP2Hp2ywxg089UriCZOIHQ.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: "DM Sans"; font-style: normal; font-weight: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/dmsans/v17/rP2Hp2ywxg089UriCZ2IHSeH.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: "DM Sans"; font-style: normal; font-weight: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/dmsans/v17/rP2Hp2ywxg089UriCZOIHQ.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: "DM Sans"; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/dmsans/v17/rP2Hp2ywxg089UriCZ2IHSeH.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: "DM Sans"; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/dmsans/v17/rP2Hp2ywxg089UriCZOIHQ.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: "Playfair Display"; font-style: normal; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgFE_.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: "Playfair Display"; font-style: normal; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTPYgFE_.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: "Playfair Display"; font-style: normal; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTLYgFE_.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: "Playfair Display"; font-style: normal; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: "Playfair Display"; font-style: normal; font-weight: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgFE_.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: "Playfair Display"; font-style: normal; font-weight: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTPYgFE_.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: "Playfair Display"; font-style: normal; font-weight: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTLYgFE_.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: "Playfair Display"; font-style: normal; font-weight: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: "Playfair Display"; font-style: normal; font-weight: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgFE_.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: "Playfair Display"; font-style: normal; font-weight: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTPYgFE_.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: "Playfair Display"; font-style: normal; font-weight: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTLYgFE_.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: "Playfair Display"; font-style: normal; font-weight: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: "Playfair Display"; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgFE_.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: "Playfair Display"; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTPYgFE_.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: "Playfair Display"; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTLYgFE_.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: "Playfair Display"; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+</style>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sage × Adobe — Winning in Small</title>
+
+</head>
+<body>
+
+<!-- ══════════════ HERO ══════════════ -->
+<section class="hero">
+  <div class="container hero-content">
+    <div class="hero-logos">
+      <span class="logo-text" style="color: #ff0000;">Adobe</span>
+      <span class="divider">×</span>
+      <span class="logo-text" style="color: var(--sage-green);">Sage</span>
+    </div>
+    <h1>Winning in Small demands a <span class="green">connected growth system</span></h1>
+    <p class="hero-sub">Sage is investing to capture a once-in-a-generation SMB market moment. The opportunity is not to do more — but to make what already exists compound into growth.</p>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="stat-value">2.75M</div>
+        <div class="stat-label">New entrants over 3 years</div>
+      </div>
+      <div class="hero-stat">
+        <div class="stat-value">£28M</div>
+        <div class="stat-label">Trapped value to unlock</div>
+      </div>
+      <div class="hero-stat">
+        <div class="stat-value">25–30%</div>
+        <div class="stat-label">Assets matched to performance</div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-indicator" style="opacity: 0; transition: opacity 0.5s;">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ══════════════ THE TENSION ══════════════ -->
+<section class="tension">
+  <div class="container">
+    <div class="section-label reveal visible">The Tension</div>
+    <div class="tension-grid">
+      <div class="tension-left reveal visible">
+        <h2>Strong activity.<br>Not yet compounding.</h2>
+        <p>Across campaigns, content, channels, and AI, Sage has real momentum. The challenge is not effort — it is that these initiatives are operating as parallel workstreams rather than a unified growth engine. Every campaign starts fresh. Every market starts from scratch. Performance insights do not feed back into planning. The result: strong investment, limited return.</p>
+      </div>
+      <div class="tension-right">
+        <div class="tension-card reveal reveal-delay-1 visible">
+          <div class="tc-title">Fragmentation across lifecycle</div>
+          <div class="tc-body">Planning, creation, localisation, activation, and measurement are disconnected. No shared campaign object links them.</div>
+        </div>
+        <div class="tension-card reveal reveal-delay-2 visible">
+          <div class="tc-title">Manual effort at every stage</div>
+          <div class="tc-body">Reactive production, heavy agency dependency, limited reusable templates. Teams recreate rather than reuse.</div>
+        </div>
+        <div class="tension-card reveal reveal-delay-3 visible">
+          <div class="tc-title">No feedback loop</div>
+          <div class="tc-body">Weak asset traceability. Limited campaign-to-outcome reporting. Insights not flowing back into planning.</div>
+        </div>
+        <div class="tension-card reveal reveal-delay-4 visible">
+          <div class="tc-title">Competitive pressure accelerating</div>
+          <div class="tc-body">Xero and QuickBooks winning mindshare, especially with accountants. Category is being reshaped by cloud-native UX and AI.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ QUOTE BAR ══════════════ -->
+<div class="quote-bar">
+  <div class="container">
+    <blockquote class="reveal visible">"This is not a lack of activity problem.<br>It is a <span class="green">connection</span> problem."</blockquote>
+  </div>
+</div>
+
+<!-- ══════════════ LIFECYCLE JOURNEY ══════════════ -->
+<section class="lifecycle">
+  <div class="container">
+    <div class="section-label reveal visible">The Content Lifecycle Today</div>
+    <h2 class="reveal visible">Where friction lives across each stage</h2>
+    <p class="sub reveal visible">Mapped across 10 working sessions with 25 stakeholders from 5 Sage teams.</p>
+    <div class="journey-track">
+      <div class="journey-stage reveal reveal-delay-1 visible">
+        <div class="stage-icon">🚀</div>
+        <div class="stage-name">Campaign Kickoff</div>
+        <div class="stage-pain">Fragmented briefing. KPI definition inconsistent. Slow alignment and approvals.</div>
+        <div class="stage-score amber">1.8 vs 2.8</div>
+        <div class="journey-connector"></div>
+      </div>
+      <div class="journey-stage reveal reveal-delay-2 visible">
+        <div class="stage-icon">🎨</div>
+        <div class="stage-name">Asset Creation</div>
+        <div class="stage-pain">Reactive production. Heavy agency dependency. Limited templates and modularity.</div>
+        <div class="stage-score amber">2.3 vs 2.9</div>
+        <div class="journey-connector"></div>
+      </div>
+      <div class="journey-stage reveal reveal-delay-3 visible">
+        <div class="stage-icon">🌍</div>
+        <div class="stage-name">Hub Localisation</div>
+        <div class="stage-pain">Teams start again too often. Poor source file discoverability. Manual handoff.</div>
+        <div class="stage-score">Below benchmark</div>
+        <div class="journey-connector"></div>
+      </div>
+      <div class="journey-stage reveal reveal-delay-4 visible">
+        <div class="stage-icon">📡</div>
+        <div class="stage-name">Owned &amp; Paid</div>
+        <div class="stage-pain">Not enough variation. Email/nurture is manual. Poor visibility of what is live.</div>
+        <div class="stage-score amber">2.4 vs 2.7</div>
+        <div class="journey-connector"></div>
+      </div>
+      <div class="journey-stage reveal reveal-delay-5 visible">
+        <div class="stage-icon">📊</div>
+        <div class="stage-name">Measure &amp; Feedback</div>
+        <div class="stage-pain">Weak asset traceability. No campaign-to-outcome reporting. Insights don't feed back.</div>
+        <div class="stage-score">2.3 vs 3.0</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ THE GAP ══════════════ -->
+<section class="gap-section">
+  <div class="container">
+    <div class="section-label reveal visible">The Missing Layer</div>
+    <h2 class="reveal visible">Traceability is the unlock</h2>
+    <p class="sub reveal visible">Without a connected thread from brief to outcome, Sage cannot reliably learn, optimise, or scale what works.</p>
+    <div class="gap-visual reveal visible">
+      <div class="gap-metrics">
+        <div class="gap-metric reveal reveal-delay-1 visible">
+          <div class="gm-value">25–30%</div>
+          <div class="gm-label">Assets matched<br>to performance</div>
+          <div class="gm-bench">Target: 90%+</div>
+        </div>
+        <div class="gap-metric reveal reveal-delay-2 visible">
+          <div class="gm-value">0</div>
+          <div class="gm-label">Shared campaign<br>IDs in use</div>
+          <div class="gm-bench">No unique identifier</div>
+        </div>
+        <div class="gap-metric reveal reveal-delay-3 visible">
+          <div class="gm-value">1.8</div>
+          <div class="gm-label">Enterprise strategy<br>maturity score</div>
+          <div class="gm-bench">Benchmark: 2.8</div>
+        </div>
+        <div class="gap-metric reveal reveal-delay-4 visible">
+          <div class="gm-value">2.3</div>
+          <div class="gm-label">Centralised performance<br>data score</div>
+          <div class="gm-bench">Benchmark: 3.0</div>
+        </div>
+      </div>
+      <div class="gap-quote reveal visible">
+        "There's <span>no unique identifier</span>, which lets us down." — Sage stakeholder, Amplify workshop
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ CUSTOMER VOICES ══════════════ -->
+<section class="voices">
+  <div class="container">
+    <div class="section-label reveal visible">What We Heard</div>
+    <h2 class="reveal visible">In their own words</h2>
+    <div class="voices-grid" style="margin-top: 40px;">
+      <div class="voice-card reveal reveal-delay-1 visible">
+        <div class="vc-quote">"Things get a little messy."</div>
+        <div class="vc-stage">Campaign Kickoff</div>
+      </div>
+      <div class="voice-card reveal reveal-delay-2 visible">
+        <div class="vc-quote">"We find out late, then need the creative next week."</div>
+        <div class="vc-stage">Asset Creation</div>
+      </div>
+      <div class="voice-card reveal reveal-delay-3 visible">
+        <div class="vc-quote">"We just can't find source files."</div>
+        <div class="vc-stage">Hub Localisation</div>
+      </div>
+      <div class="voice-card reveal reveal-delay-1 visible">
+        <div class="vc-quote">"Localisation often means starting again."</div>
+        <div class="vc-stage">Hub Localisation</div>
+      </div>
+      <div class="voice-card reveal reveal-delay-2 visible">
+        <div class="vc-quote">"There's not enough variation of assets to work with."</div>
+        <div class="vc-stage">Owned &amp; Paid</div>
+      </div>
+      <div class="voice-card reveal reveal-delay-3 visible">
+        <div class="vc-quote">"There's no unique identifier, which lets us down."</div>
+        <div class="vc-stage">Measure &amp; Feedback</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ THREE PILLARS ══════════════ -->
+<section class="pillars">
+  <div class="container">
+    <div class="section-label reveal visible">The Opportunity</div>
+    <h2 class="reveal visible">Three pillars to unlock growth</h2>
+    <p class="sub reveal visible">Not separate initiatives — they reinforce each other when connected.</p>
+    <div class="pillar-grid">
+      <div class="pillar-card reveal reveal-delay-1 visible">
+        <div class="pillar-num">01</div>
+        <div class="pillar-title">Building on the Foundation</div>
+        <div class="pillar-desc">Strong capabilities and innovation are already in place. The opportunity is to make them discoverable, reusable, and governed — so teams stop rebuilding and start compounding.</div>
+        <ul class="pillar-outcomes">
+          <li>Modular content creation and templates</li>
+          <li>Connected DAM with search and reuse</li>
+          <li>Streamlined briefing and approvals</li>
+          <li>Reduced agency dependency</li>
+        </ul>
+      </div>
+      <div class="pillar-card reveal reveal-delay-2 visible">
+        <div class="pillar-num">02</div>
+        <div class="pillar-title">Closing the Loop</div>
+        <div class="pillar-desc">The biggest unlock. Connect planning, creation, activation, and measurement through shared IDs and end-to-end traceability. Turn disconnected stages into a learning system.</div>
+        <ul class="pillar-outcomes">
+          <li>Campaign and asset-level attribution</li>
+          <li>Performance data feeding back to planning</li>
+          <li>Unified visibility of what is live</li>
+          <li>Content intelligence, not just content production</li>
+        </ul>
+      </div>
+      <div class="pillar-card reveal reveal-delay-3 visible">
+        <div class="pillar-num">03</div>
+        <div class="pillar-title">AI-Enabled Acceleration</div>
+        <div class="pillar-desc">AI is the multiplier, not the starting point. When the foundation is connected and the loop is closed, AI can scale what works, reduce manual effort, and accelerate growth.</div>
+        <ul class="pillar-outcomes">
+          <li>AI-assisted content variation and localisation</li>
+          <li>Automated on-brand review and validation</li>
+          <li>Personalised activation at scale</li>
+          <li>Insight-driven content optimisation</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ VALUE CASE ══════════════ -->
+<section class="value-case">
+  <div class="container">
+    <div class="section-label reveal visible" style="justify-content: center;">Value Case</div>
+    <h2 class="reveal visible">Faster growth. Lower waste. Better visibility.</h2>
+    <div class="value-headline reveal visible">£28M</div>
+    <div class="value-sub reveal visible">Estimated value to Sage over three years</div>
+    <div class="value-levers reveal visible">
+      <div class="value-lever">
+        <div class="vl-cat">Revenue gain</div>
+        <div class="vl-title">Attract &amp; Engage</div>
+        <div class="vl-desc">Higher cross-channel visibility and more relevant messaging driving qualified traffic.</div>
+      </div>
+      <div class="value-lever">
+        <div class="vl-cat">Revenue gain</div>
+        <div class="vl-title">Convert</div>
+        <div class="vl-desc">Streamlined journeys and content relevance improving conversion rates.</div>
+      </div>
+      <div class="value-lever">
+        <div class="vl-cat">Cost optimisation</div>
+        <div class="vl-title">Paid Media Efficiency</div>
+        <div class="vl-desc">Reduced spend through improved efficiency and performance visibility.</div>
+      </div>
+      <div class="value-lever">
+        <div class="vl-cat">Cost optimisation</div>
+        <div class="vl-title">Creative &amp; Tech Efficiency</div>
+        <div class="vl-desc">Lower agency dependency and retiring redundant tools through new capabilities.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ WHAT COMES NEXT ══════════════ -->
+<section class="next-steps">
+  <div class="container">
+    <div class="section-label reveal visible">What Comes Next</div>
+    <h2 class="reveal visible">From understanding to action</h2>
+    <p class="sub reveal visible">Moving from identifying the opportunity to making it real.</p>
+    <div class="phase-timeline">
+      <div class="phase-card reveal reveal-delay-1 visible">
+        <div class="phase-badge">Complete</div>
+        <div class="phase-title">Assess</div>
+        <div class="phase-desc">Mapped the current operating model, identified key friction points, and built a shared view of the opportunity.</div>
+        <ul class="phase-items">
+          <li>10 working sessions</li>
+          <li>25 stakeholders across 5 teams</li>
+          <li>Digital maturity assessment</li>
+          <li>Use case validation workshop</li>
+        </ul>
+      </div>
+      <div class="phase-card active reveal reveal-delay-2 visible">
+        <div class="phase-badge">In progress</div>
+        <div class="phase-title">Aspire</div>
+        <div class="phase-desc">Define the north star architecture, validate the business case with Sage data, and align on the highest-value path forward.</div>
+        <ul class="phase-items">
+          <li>Current architecture deep dive</li>
+          <li>Data request and validation</li>
+          <li>Inside-out business case</li>
+          <li>North star experience architecture</li>
+        </ul>
+      </div>
+      <div class="phase-card reveal reveal-delay-3 visible">
+        <div class="phase-badge">Next</div>
+        <div class="phase-title">Achieve</div>
+        <div class="phase-desc">Move from strategy to execution. Phased implementation roadmap, quick wins, and measurable outcomes tied to WIS targets.</div>
+        <ul class="phase-items">
+          <li>Phased implementation plan</li>
+          <li>Quick-win identification</li>
+          <li>Operating model design</li>
+          <li>Success metrics and governance</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ CLOSING QUOTE ══════════════ -->
+<div class="quote-bar">
+  <div class="container">
+    <blockquote class="reveal visible">"The opportunity is not to do more.<br>It is to make what Sage already does <span class="green">compound into growth</span>."</blockquote>
+  </div>
+</div>
+
+<!-- ══════════════ FOOTER ══════════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-logos">Adobe × Sage — Amplify Programme</div>
+    <p>Confidential. Prepared March 2026.</p>
+  </div>
+</footer>
+
+
+
+
+
+</body></html>
