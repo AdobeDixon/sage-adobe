@@ -1,3 +1,8 @@
+// Redirect /index to the static custom page
+if (window.location.pathname === '/index') {
+  window.location.replace('/index.html');
+}
+
 import {
   buildBlock,
   loadHeader,
